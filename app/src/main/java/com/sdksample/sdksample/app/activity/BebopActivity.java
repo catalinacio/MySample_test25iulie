@@ -88,7 +88,7 @@ public class BebopActivity extends AppCompatActivity {
     }
 
     private void initIHM() {
-        mVideoView = (BebopVideoView) findViewById(R.id.videoView);
+        //mVideoView = (BebopVideoView) findViewById(R.id.videoView);
 
         findViewById(R.id.emergencyBt).setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -385,12 +385,13 @@ public class BebopActivity extends AppCompatActivity {
 
         @Override
         public void configureDecoder(ARControllerCodec codec) {
-            mVideoView.configureDecoder(codec);
+            //mVideoView.configureDecoder(codec);
+            Log.d(TAG,"missing mVideoView.configureDecoder(codec) ** error");
         }
 
         @Override
         public void onFrameReceived(ARFrame frame) {
-            mVideoView.displayFrame(frame);
+           Log.d(TAG,"mVideoView.displayFrame(frame);");
         }
 
         @Override

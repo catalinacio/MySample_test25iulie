@@ -61,9 +61,9 @@ public class DeviceListActivity extends AppCompatActivity {
                         intent = new Intent(DeviceListActivity.this, BebopActivity.class);
                         break;
 
-                    case ARDISCOVERY_PRODUCT_SKYCONTROLLER:
-                        intent = new Intent(DeviceListActivity.this, SkyControllerActivity.class);
-                        break;
+                 //   case ARDISCOVERY_PRODUCT_SKYCONTROLLER:
+                    //    intent = new Intent(DeviceListActivity.this, SkyControllerActivity.class);
+                     //   break;
 
                     case ARDISCOVERY_PRODUCT_JS:
                     case ARDISCOVERY_PRODUCT_JS_EVO_LIGHT:
